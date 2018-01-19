@@ -16,6 +16,15 @@ Being able to continuously deploy code and data is a long term goal of WormBase.
 * Possible mentors: Adam Wright
 * Difficulty rating: medium
 
+### Improve relevance search result
+[_Core development_]
+
+Search is essential for allowing users to discover the information they need. Hence, it's important to ask: do they find what they look for? If a search is performed immediately followed by another one, maybe they did not. We can probably gain insight on that through some data analysis, by combining keywords that users enter into search with usage metrics captured by Google Analytics.
+* Expected outcome: Improve the relevance of search result by improving the code that indexes the content and/or queries the search index
+* Skills preferred: Elasticsearch
+* Possible mentors: Sibyl Gao
+* Difficulty rating: medium
+
 ### Revision tracking curation database and tools
 [_Fun/Peripheral_]
 
