@@ -9,8 +9,10 @@
 
 ### Multi-container cloud deployment
 [_Infrastructure/Automation_]
-* Expected outcome:
-* Skills preferred: HTML, CSS, JavaScript
+
+Being able to continuously deploy code and data is a long term goal of WormBase. Over the past couple of years we have been moving towards a docker based, where we have been using AWS' ElasticBeanstalk to deploy container individually. As we deploy more components of our microservice based architecture, there is a increasing need to coordinate the deployment of the individual services. Unfortunately and fortunately, throughout the process, there has been significant developments in deployment technologies including Kubernetes (https://aws.amazon.com/eks/). We would like a prototype of a provisioning system that will be able to coordinate or deployment process using modern deployment technologies. 
+* Expected outcome: A proof of concept, Docker based, system for deploying and maintaining our microservice architecture.  
+* Skills preferred: Docker, DevOps, AWS
 * Possible mentors: Adam Wright
 * Difficulty rating: medium
 
