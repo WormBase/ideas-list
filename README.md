@@ -43,6 +43,9 @@ With a growing number of research publications to curate and a constant number o
 * Possible mentors:
 * Difficulty rating: difficult
 
+### Have your own ideas?
+Please let us know at developers@wormbase.org
+
 
 ## Contributing to this list
 
