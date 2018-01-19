@@ -1,4 +1,4 @@
-# Ideas list (2018)
+# Google Summer of Code Ideas list (2018)
 
 ### User interface re-design and implementation
 [_Core development_]
@@ -16,20 +16,20 @@ Being able to continuously deploy code and data is a long term goal of WormBase.
 * Possible mentors: Adam Wright
 * Difficulty rating: medium
 
-### Curation database and tools
+### Revision tracking curation database and tools
 [_Fun/Peripheral_]
 
-Serving up to date content is important to WormBase and our users. Unfortunately, it generally takes 2 months before information entered by our curators is available on the website, as a result of the curation happens in separate databases that get build into the production every 2 month. Having a live curated database to power our website has lead to an ongoing effort to migrate from our legacy database solution to Datomic, a transactional database with the added benefit of tracking changes and having historic versions of the database queryable. We would like a prototype of the live-curated website using just our person/lineage data, with an emphasis on the provenance of change.
-* Expected outcome: A Datomic database that models person/lineage data and a REST API for submitting and retrieving content, and reviewing change history, (optionally a user interface)
-Skills preferred: Clojure, database
+Serving up to date content is important to WormBase and our users. Unfortunately, we are held back by curation that happens in separate databases, which get build into the production every 2 month. Having a live-curated database to power our website motivated our ongoing database migration to [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html), a transactional database with change tracking and a queryable history, which will enable us to build a live-curated website with an emphasis on change tracking. In addition to having curated content immediately available to users, this website will provide information on what has changed recently along with metadata associated with these updates, such as citations and remarks. We'd like to start by making a prototype that works on the person/lineage data.
+* Expected outcome: A Datomic database that models person/lineage data and a REST API for submitting and retrieving content, reviewing change history, and optionally a user interface
+* Skills preferred: Clojure, database
 * Possible mentors:
 * Difficulty rating: medium
 
 ### Community-driven curation
 [_Risky/Exploratory_]
 
-With a growing number of research publications to curate and a constant number of curators, it becomes an increasing challenge to ensure our content is current and accurate. The solution is outsourcing, encouraging researchers in the community to submit data from published papers to us, but at the same time, having some quality control process in place to ensure the system is not abused.
-* Expected outcome: A Datomic database that models "under review" content as well as approved content. A REST API for reviewing and approving content, and accessing content that may or may not include those under review.
+With a growing number of research publications to curate and a constant number of curators, it becomes an increasing challenge to ensure our content is current and accurate. The solution is outsourcing, encouraging researchers in the community to submit data from published papers to us, but at the same time, having some quality control process in place to ensure the system is not abused. We'd like to build a data submission and reviewing system that can be generalized to work on the diverse data types that we curate.
+* Expected outcome: A [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html) database that models "under review" content as well as approved content. A REST API for reviewing and approving content, and accessing content that may or may not include those that are under review.
 * Skills preferred: Clojure, database
 * Possible mentors:
 * Difficulty rating: difficult
