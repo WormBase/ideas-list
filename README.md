@@ -10,7 +10,7 @@
 ### Multi-container cloud deployment
 [_Infrastructure/Automation_]
 
-Being able to continuously deploy code and data is a long term goal of WormBase. Over the past couple of years we have been moving towards a docker based, where we have been using AWS' ElasticBeanstalk to deploy container individually. As we deploy more components of our microservice based architecture, there is a increasing need to coordinate the deployment of the individual services. Unfortunately and fortunately, throughout the process, there has been significant developments in deployment technologies including Kubernetes (https://aws.amazon.com/eks/). We would like a prototype of a provisioning system that will be able to coordinate or deployment process using modern deployment technologies.
+Continuously deploying code and data is a long term goal of WormBase. Over the past couple of years we have been moving towards a docker based, where we have been using AWS' ElasticBeanstalk to deploy container individually. As we deploy more components of our microservice based architecture, there is a increasing need to coordinate the deployment of the individual services. Unfortunately and fortunately, throughout the process, there has been significant developments in deployment technologies including Kubernetes (https://aws.amazon.com/eks/). We would like a prototype of a provisioning system that will be able to coordinate or deployment process using modern deployment technologies.
 * Expected outcome: A proof of concept, Docker based, system for deploying and maintaining our microservice architecture.  
 * Skills preferred: Docker, DevOps, AWS, Kubernetes
 * Possible mentors: Adam Wright
@@ -23,6 +23,14 @@ Search is essential for allowing users to discover the information they need. He
 * Expected outcome: Improve the relevance of search result by improving the code that indexes the content and/or queries the search index
 * Skills preferred: Elasticsearch
 * Possible mentors: Sibyl Gao
+* Difficulty rating: medium
+
+### Navigating search with faccets
+[_Core/UI development_]
+Often researchers will either want to learn about a list of genes or would like to find a list of genes that have certain characteristics. Allowing users to navigate the data with facets, counts, and dynamic graphs. Currently index the entities in our main database into ElasticSearch and display the results to the user. Although this interface has shown to be effective we believe that there would be great utility in taking advantage of facets and counts that technologies like ElasticSearch provide.
+* Expected outcome: Improve search interface through the use of facets and relevant visualizations.
+* Skills preferred: Elasticsearch, JavaScript, d3.js
+* Possible mentors: Sibyl Gao, Adam Wright
 * Difficulty rating: medium
 
 ### Revision tracking curation database and tools
