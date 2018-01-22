@@ -1,10 +1,21 @@
 # Google Summer of Code Ideas list (2018)
 
-### User interface re-design and implementation
-[_Core development_]
-* Expected outcome:
-* Skills preferred: HTML, CSS, JavaScript
-* Possible mentors: Sibyl Gao
+### Community-driven curation
+[_Risky/Exploratory_]
+
+Scientific databases that curate the primary literature face an enormous challenge: the number of research papers continues to skyrocket, but the process of curation is slow, tedious, and resource-constrained. One solution is to engage the primary research community in curation of their own data, a strategy referred to as "community curation". At the same time, such strategies require careful and automated quality control to ensure the integrity of submissions and to prevent abuse of the system. We'd like to build a data submission and reviewing system that can be generalized to work on the diverse data types that we curate.
+* Expected outcome: A [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html) database that models "under review" content as well as approved content. A REST API for reviewing and approving content, and accessing content that may or may not include those that are under review.
+* Skills preferred: Clojure, database
+* Possible mentors: Adam Wright, Sibyl Gao
+* Difficulty rating: difficult
+
+### Revision tracking curation database and tools
+[_Fun/Peripheral_]
+
+Serving up to date content is important to WormBase and our users. Unfortunately, we are held back by curation that happens in separate databases, which get build into the production database every 2 months. Having a live-curated database to power our website motivated our ongoing database migration to [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html), a transactional database with change tracking and a queryable history. It will enable us to build a live-curated website with an emphasis on change tracking. In addition to having curated content immediately available to users, this website will provide information on what has changed recently along with metadata associated with these updates, such as citations and remarks. We'd like to start by making a prototype that works on the person/lineage data.
+* Expected outcome: A Datomic database that models person/lineage data and a REST API for submitting and retrieving content, reviewing change history, and optionally a user interface
+* Skills preferred: Clojure, database
+* Possible mentors: Adam Wright, Sibyl Gao
 * Difficulty rating: medium
 
 ### Multi-container cloud deployment
@@ -33,23 +44,19 @@ Often researchers will either want to learn about a list of genes or would like 
 * Possible mentors: Sibyl Gao, Adam Wright
 * Difficulty rating: medium
 
-### Revision tracking curation database and tools
-[_Fun/Peripheral_]
+### Improve UI/UX
+[_Core development_]
 
-Serving up to date content is important to WormBase and our users. Unfortunately, we are held back by curation that happens in separate databases, which get build into the production database every 2 months. Having a live-curated database to power our website motivated our ongoing database migration to [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html), a transactional database with change tracking and a queryable history. It will enable us to build a live-curated website with an emphasis on change tracking. In addition to having curated content immediately available to users, this website will provide information on what has changed recently along with metadata associated with these updates, such as citations and remarks. We'd like to start by making a prototype that works on the person/lineage data.
-* Expected outcome: A Datomic database that models person/lineage data and a REST API for submitting and retrieving content, reviewing change history, and optionally a user interface
-* Skills preferred: Clojure, database
-* Possible mentors: Adam Wright, Sibyl Gao
+There is some learning curve with WormBase website, as we learned from questions that they asked. The user interface of WormBase website is historically oriented towards customizability. We allows users to 
+As we learned from our users over the years, there is a bit of learning involved for new users to the WormBase site. We want some fundamental aspects of the user interface changed, because it emphasis too much on customization, instead a good user experience for something new. The It's a valuable opportunity for us to have someone unfamiliar with the site to tell us what strikes them as odd.
+Locating information on WormBase website sometimes takes a bit of learning, as we learned from our users.
+Here is [an example page](http://www.wormbase.org/species/c_elegans/gene/WBGene00006763).  
+* Expected outcome: Design and implement user interface improvements to make it more intuitive to new users and easier to locate information.
+* Skills preferred: HTML, CSS, JavaScript
+* Possible mentors: Sibyl Gao
 * Difficulty rating: medium
 
-### Community-driven curation
-[_Risky/Exploratory_]
 
-Scientific databases that curate the primary literature face an enormous challenge: the number of research papers continues to skyrocket, but the process of curation is slow, tedious, and resource-constrained. One solution is to engage the primary research community in curation of their own data, a strategy referred to as "community curation". At the same time, such strategies require careful and automated quality control to ensure the integrity of submissions and to prevent abuse of the system. We'd like to build a data submission and reviewing system that can be generalized to work on the diverse data types that we curate.
-* Expected outcome: A [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html) database that models "under review" content as well as approved content. A REST API for reviewing and approving content, and accessing content that may or may not include those that are under review.
-* Skills preferred: Clojure, database
-* Possible mentors: Adam Wright, Sibyl Gao
-* Difficulty rating: difficult
 
 ### Have your own ideas?
 Please let us know at developers@wormbase.org
