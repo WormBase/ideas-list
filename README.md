@@ -44,13 +44,11 @@ Often researchers will either want to learn about a list of genes or would like 
 * Possible mentors: Sibyl Gao, Adam Wright
 * Difficulty rating: medium
 
-### Improve UI/UX
+### User interface re-design and implementation
 [_Core development_]
 
-There is some learning curve with WormBase website, as we learned from questions that they asked. The user interface of WormBase website is historically oriented towards customizability. We allows users to 
-As we learned from our users over the years, there is a bit of learning involved for new users to the WormBase site. We want some fundamental aspects of the user interface changed, because it emphasis too much on customization, instead a good user experience for something new. The It's a valuable opportunity for us to have someone unfamiliar with the site to tell us what strikes them as odd.
-Locating information on WormBase website sometimes takes a bit of learning, as we learned from our users.
-Here is [an example page](http://www.wormbase.org/species/c_elegans/gene/WBGene00006763).  
+There is some learning curve with WormBase website, as we learned from questions that users asked. The user interface is historically oriented towards customizability, which users find sometimes more complicated than necessary.
+Here is [an example page](http://www.wormbase.org/species/c_elegans/gene/WBGene00006763) of a page on WormBase site. As we convert UI implementation from Template Toolkit and jQuery to React, it's the perfect time to re-think about user experience design. We would like to identify things strikes as odd in the current design and fix them.
 * Expected outcome: Design and implement user interface improvements to make it more intuitive to new users and easier to locate information.
 * Skills preferred: HTML, CSS, JavaScript
 * Possible mentors: Sibyl Gao
