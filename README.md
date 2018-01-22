@@ -25,7 +25,7 @@ Search is essential for allowing users to discover the information they need. He
 * Possible mentors: Sibyl Gao
 * Difficulty rating: medium
 
-### Navigating search with faccets
+### Navigating search with facets
 [_Core/UI development_]
 Often researchers will either want to learn about a list of genes or would like to find a list of genes that have certain characteristics. Allowing users to navigate the data with facets, counts, and dynamic graphs. Currently index the entities in our main database into ElasticSearch and display the results to the user. Although this interface has shown to be effective we believe that there would be great utility in taking advantage of facets and counts that technologies like ElasticSearch provide.
 * Expected outcome: Improve search interface through the use of facets and relevant visualizations.
@@ -45,7 +45,7 @@ Serving up to date content is important to WormBase and our users. Unfortunately
 ### Community-driven curation
 [_Risky/Exploratory_]
 
-With a growing number of research publications to curate and a constant number of curators, it becomes an increasing challenge to ensure our content is current and accurate. The solution is outsourcing, encouraging researchers in the community to submit data from published papers to us, but at the same time, having some quality control process in place to ensure the system is not abused. We'd like to build a data submission and reviewing system that can be generalized to work on the diverse data types that we curate.
+Scientific databases that curate the primary literature face an enormous challenge: the number of research papers continues to skyrocket, but the process of curation is slow, tedious, and resource-constrained. One solution is to engage the primary research community in curation of their own data, a strategy referred to as "community curation". At the same time, such strategies require careful and automated quality control to ensure the integrity of submissions and to prevent abuse of the system. We'd like to build a data submission and reviewing system that can be generalized to work on the diverse data types that we curate.
 * Expected outcome: A [Datomic](https://docs.datomic.com/on-prem/getting-started/brief-overview.html) database that models "under review" content as well as approved content. A REST API for reviewing and approving content, and accessing content that may or may not include those that are under review.
 * Skills preferred: Clojure, database
 * Possible mentors:
